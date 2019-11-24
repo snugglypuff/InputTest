@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af51281006b5dee4b81eb928da004d81, type: 3}
+  m_Name: GamePad
+  m_EditorClassIdentifier: 
+  MovementAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 605def25-dab9-498e-8b1a-94acc03e1b2d
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: 75ad4d6d-60cb-408c-983a-182bbd5529f7
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: 491caead-14b8-4abe-b063-0a090d7127d2
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 14aca137-f880-4445-854d-f76995170486
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: ee2384d0-6f97-4870-8e4b-a06f9ae9e5ab
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 8
+  SwordAction:
+    m_Name: Sword
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 454e1ea6-37de-4ae7-99c8-a7dd4c6a5944
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 543520c4-e98c-4efa-9976-a430f3dbe027
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Sword
+      m_Flags: 0
+  GunAction:
+    m_Name: Gun
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 38405610-31e0-47c3-b747-1a0fd5f30adc
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 238a265e-2351-415e-86bd-f4eac07c98ca
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Gun
+      m_Flags: 0
+  DodgeAction:
+    m_Name: Dodge
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3e7d0fb7-62c8-45f4-9623-1fba5fe56ee3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 3a3d3a19-d864-4d74-8939-ea2c26266c58
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Dodge
+      m_Flags: 0
+  UseAction:
+    m_Name: Use
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3ffe42ac-4654-4792-a358-b174276c7793
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 0836a678-1e99-4aee-96bb-b161809a263e
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Use
+      m_Flags: 0
+  PauseAction:
+    m_Name: Pause
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 85c69a17-3bb9-4a7b-aac7-390f746c11d7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 8a023868-a648-443f-8650-84f41c886073
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
+  placeholderAction:
+    m_Name: Placeholder
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5a515a68-d9f1-4864-9046-39b7ac9948a4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4083a134-8cb8-4454-b876-ba996b2f43b7
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Placeholder
+      m_Flags: 0
