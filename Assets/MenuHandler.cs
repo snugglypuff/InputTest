@@ -45,6 +45,12 @@ public class MenuHandler : MonoBehaviour
     private void Update()
     {
         TestInput();
+
+        if (Gamepad.all.Count > 0)
+        {
+            Debug.Log(Gamepad.current.name);
+            Gamepad.all[0].SetMotorSpeeds(0.25f, 0.75f);
+        }
     }
 
     /* Placeholder. Break this would probably be split across another script, but for this test eveyrthing is handled in the menu handler */
