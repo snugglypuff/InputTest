@@ -1,1 +1,1 @@
-{"upPath":"<Keyboard>/w","leftPath":"<Keyboard>/a","rightPath":"<Keyboard>/d","downPath":"<Keyboard>/s","dodgePath":"<Keyboard>/space","usePath":"<Keyboard>/e","swordPath":"<Mouse>/leftButton","gunPath":"<Mouse>/rightButton"}
+{"upPath":"<Gamepad>/dpad","leftPath":"<Keyboard>/a","rightPath":"<Keyboard>/d","downPath":"<Keyboard>/s","dodgePath":"<Keyboard>/h","usePath":"<Keyboard>/j","swordPath":"<Mouse>/leftButton","gunPath":"<Mouse>/rightButton"}

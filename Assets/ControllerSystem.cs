@@ -19,11 +19,16 @@ public class ControllerSystem : MonoBehaviour
     public void KeyBindingOverride( InputAction _action, int _id )
     {
         RebindingOperation rebindOperation = _action.PerformInteractiveRebinding();
-        rebindOperation.WithControlsExcluding( "<Pointer>/position" ).WithControlsExcluding( "<Pointer>/delta" )
+        rebindOperation.WithControlsExcluding("<Pointer>/position").WithControlsExcluding("<Pointer>/delta")
+
+       /* rebindOperation
+            .WithControlsExcluding("<Mouse>")
+            .WithControlsExcluding("<Keyboard>")*/
             .OnMatchWaitForAnother( 0.1f )
             .Start().OnComplete( _callback => {
                 rebindOperation.Dispose();
                 mainMenu.ReturnFromMapping( _action.bindings[0].effectivePath, _id );
+
             } );
     }
 

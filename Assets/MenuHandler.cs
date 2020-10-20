@@ -40,17 +40,45 @@ public class MenuHandler : MonoBehaviour
     private void Start()
     {
         SetupGame();
+
+        /*InputSystem.onEvent += (pointer, device) => {
+            Debug.Log(device.name + " " + device.);
+        };*/
+        inputData.DodgeAction.performed += (a) => { Debug.Log(a.control.device.path); };
+        inputData.GunAction.performed += (a) => { Debug.Log(a.control.device.path); };
+        inputData.MovementAction.performed += (a) => { Debug.Log(a.control.device.path); };
+        inputData.SwordAction.performed += (a) => { Debug.Log(a.control.device.path); };
+        inputData.UseAction.performed += (a) => { Debug.Log(a.control.device.path); };
+        inputData.PauseAction.performed += (a) => { Debug.Log(a.control.device.path); };
+
+        for (int i = 0; i <  Gamepad.all.Count; i++)
+        {
+            Debug.Log(i+ " " +Gamepad.all[i].device);
+        }
     }
 
     private void Update()
     {
         TestInput();
 
+
+
+        /*if (Pointer.current.)
+        {
+            Debug.Log("mouse");
+        }
+
+        if (Keyboard.current.anyKey.isPressed)
+        {
+            Debug.Log("keyboard");
+        }
+        /*
+        Debug.Log(Gamepad.all.Count);
         if (Gamepad.all.Count > 0)
         {
             Debug.Log(Gamepad.current.name);
             Gamepad.all[0].SetMotorSpeeds(0.25f, 0.75f);
-        }
+        }*/
     }
 
     /* Placeholder. Break this would probably be split across another script, but for this test eveyrthing is handled in the menu handler */
@@ -281,11 +309,13 @@ public class MenuHandler : MonoBehaviour
         if (inputData.DodgeAction.triggered)
         {
             Debug.Log("Dodging!");
+            Gamepad.all[1].SetMotorSpeeds(0.25f, 0.75f);
         }
 
         if (inputData.UseAction.triggered)
         {
             Debug.Log("Interacting!");
+            Gamepad.all[0].SetMotorSpeeds(0.25f, 0.75f);
         }
 
         if (inputData.SwordAction.triggered)
